@@ -13,6 +13,21 @@
     font-family: TTNorms-Medium;
     font-size: 400%;
 }
+.button2 {
+    width: 100%;
+    height: 100%;
+    background-color: #E4DEEA;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    /*text-align: left;*/
+    color: white;
+    font-family: TTNorms-Medium;
+    font-size: 250%;
+}
 @font-face {
     font-family: 'TTNorms-Medium';
     src: url('../fonts/TTNorms-Medium.eot');

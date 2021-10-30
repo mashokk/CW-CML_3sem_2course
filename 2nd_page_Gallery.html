@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+
+
+
+	<link rel="stylesheet" href="fm.revealator.jquery.css">
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="fm.revealator.jquery.js"></script>
+
+
+
+
     <style>
         .full {
             background-color: #E4DEEA;
@@ -13,13 +23,6 @@
             margin: auto;
             border-radius: 30px;
             font-family: TTNorms-Medium;
-        }
-        div.gallery {
-          margin: 5px;
-          border: 1px solid #ccc;
-          float: left;
-          width: 200px;
-          max-height: 200px;
         }
         
         .container {
@@ -33,14 +36,24 @@
             bottom: 0;
             right: 0;
         }
-        div.gallery:hover {
-          border: 1px solid #777;
-        }
         
         div.gallery img {
           width: 100%;
           height: auto;
+          margin: auto;
         }
+
+        .revealator-slideup.revealator-within, .revealator-slideup.revealator-partially-above, .revealator-slideup.revealator-above {
+            transform: translate(0, 0);
+            opacity: 1;
+        }
+        *[class^="revealator"] {
+            height: 15rem;
+            width: 20rem;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        
         
         div.desc {
           padding: 15px;
@@ -59,17 +72,6 @@
 
 
 
-        <script type="text/javascript">
-            window.onload = function() {
-                var image = document.getElementById('image')
-                image.onclick = function(){
-                    this.style.height = '1000px'
-                    this.style.width = '1000px';
-                }
-            }
-        </script>
-
-
 
 
 
@@ -80,16 +82,16 @@
             <div class="container">
                 <a href="what.html">&#10094; Вернуться на главную</a>
                 <div>
-                    <div class="gallery">
-                        <img src="images/1.jpg" alt="1" id='image'>
+                    <div class="gallery" class="revealator-slideup revealator-within">
+                        <img src="images/1.jpg" alt="1">
                     </div>
 
-                    <div class="gallery">
+                    <div class="gallery" class="revealator-slideup revealator-within">
                         <img src="images/2.jpg" alt="2">
                     
                     </div>
 
-                    <div class="gallery">
+                    <div class="gallery" class="revealator-slideup revealator-within">
                         <img src="images/3.jpg" alt="3">
                     
                     </div>
@@ -102,10 +104,9 @@
                         <img src="images/5.jpg" alt="5">
                     
                     </div>
-                    <div class="gallery">
-                        <img src="images/6.jpg" alt="6">
                     
-                    </div>
+                    
+
                     <div class="gallery">
                         <img src="images/7.jpg" alt="7">
                     

@@ -8,17 +8,10 @@
 
 
 
-	<link rel="stylesheet" href="fm.revealator.jquery.css">
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="fm.revealator.jquery.js"></script>
-
-
-
-
     <style>
         .full {
             background-color: #E4DEEA;
-            height: 120vh;
+            min-height: 1700px;
             max-width: 1000px;
             margin: auto;
             border-radius: 30px;
@@ -26,38 +19,16 @@
         }
         
         .container {
-            border: 2px solid rgb(255, 255, 255);
-            margin: auto;
+            border: 2px solid rgb(255, 0, 0);
+            margin: 0 auto;
+            padding: 40px;
             position: absolute;
-            max-height: 90%;
             max-width: 900px;
+            height: 1600px;
             top: 0;
             left: 0;
             bottom: 0;
             right: 0;
-        }
-        
-        div.gallery img {
-          width: 100%;
-          height: auto;
-          margin: auto;
-        }
-
-        .revealator-slideup.revealator-within, .revealator-slideup.revealator-partially-above, .revealator-slideup.revealator-above {
-            transform: translate(0, 0);
-            opacity: 1;
-        }
-        *[class^="revealator"] {
-            height: 15rem;
-            width: 20rem;
-            padding: 10px;
-            margin: 0 auto;
-        }
-        
-        
-        div.desc {
-          padding: 15px;
-          text-align: center;
         }
         @font-face {
         	font-family: 'TTNorms-Medium';
@@ -65,6 +36,86 @@
         	src: local('☺'), url('fonts/TTNorms-Medium.woff') format('woff'), url('fonts/TTNorms-Medium.ttf') format('truetype'), url('fonts/TTNorms-Medium.svg') format('svg');
         	font-weight: normal;
         	font-style: normal;
+        }
+
+        .parent {
+            border: 2px solid green;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            height: 1600px;
+            position: relative;
+        }
+        .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10, .div11, .div12, .div13, .div14{
+            /*border: 2px solid firebrick;*/
+            display: grid;
+            background-color: #E4DEEA;
+            margin: 5px;
+            height: 300px;
+        }
+        @media only screen and (max-width: 700px) {
+            .div1, .div2, .div3, .div4, .div5, .div6, .div7, .leftbox {
+                margin: 5px;
+            }
+            .div1 {grid-area: div1;}
+            .div2 {grid-area: div2;}
+            .div3 {grid-area: div3;}
+            .div4 {grid-area: div4;}
+            .div5 {grid-area: div5;}
+            .div6 {grid-area: div6;}
+            .div7 {grid-area: div7;}
+            .parent {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-areas:
+                    "div1"
+                    "div2"
+                    "div3"
+                    "div4"
+                    "div5"
+                    "div6"
+                    "div7"
+                    "div8"
+                    "div9"
+                    "div10"
+                    "div11"
+                    "div12"
+                    "div13"
+                    "div14";
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            .div1, .div2, .div3, .div4, .div5, .div6, .div7, .leftbox {
+                margin: 5px;
+            }
+            .div1 {grid-area: div1;}
+            .div2 {grid-area: div2;}
+            .div3 {grid-area: div3;}
+            .div4 {grid-area: div4;}
+            .div5 {grid-area: div5;}
+            .div6 {grid-area: div6;}
+            .div7 {grid-area: div7;}
+            .parent {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-areas:
+                    "div1"
+                    "div2"
+                    "div3"
+                    "div4"
+                    "div5"
+                    "div6"
+                    "div7"
+                    "div8"
+                    "div9"
+                    "div10"
+                    "div11"
+                    "div12"
+                    "div13"
+                    "div14";
+            }
         }
     </style>
 
@@ -81,60 +132,21 @@
         <div class="full">
             <div class="container">
                 <a href="what.html">&#10094; Вернуться на главную</a>
-                <div>
-                    <div class="gallery" class="revealator-slideup revealator-within">
-                        <img src="images/1.jpg" alt="1">
-                    </div>
-
-                    <div class="gallery" class="revealator-slideup revealator-within">
-                        <img src="images/2.jpg" alt="2">
-                    
-                    </div>
-
-                    <div class="gallery" class="revealator-slideup revealator-within">
-                        <img src="images/3.jpg" alt="3">
-                    
-                    </div>
-
-                    <div class="gallery">
-                        <img src="images/4.jpg" alt="4">
-                    
-                    </div>
-                    <div class="gallery">
-                        <img src="images/5.jpg" alt="5">
-                    
-                    </div>
-                    
-                    
-
-                    <div class="gallery">
-                        <img src="images/7.jpg" alt="7">
-                    
-                    </div>
-                    <div class="gallery">
-                        <img src="images/8.jpg" alt="8">
-                    
-                    </div>
-                    <div class="gallery">
-                        <img src="images/9.jpg" alt="9">
-                    
-                    </div>
-                    <div class="gallery">
-                        <img src="images/10.jpg" alt="10">
-                    
-                    </div>
-                    <div class="gallery">
-                        <img src="images/11.jpg" alt="11">
-                    
-                    </div>
-                    <div class="gallery">
-                        <img src="images/12.jpg" alt="12">
-                    
-                    </div>
-                    <div class="gallery">
-                        <img src="images/13.jpg" alt="13">
-                    
-                    </div>
+                <div class="parent">
+                    <div class="div1"><img style="max-width: 250px;" src="images/1.jpg" alt="1"></div>
+                    <div class="div2"><img style="max-width: 250px;" src="images/2.jpg" alt="1"></div>
+                    <div class="div3"><img style="max-width: 250px;" src="images/3.jpg" alt="1"></div>
+                    <div class="div4"><img style="max-width: 250px;" src="images/4.jpg" alt="1"></div>
+                    <div class="div5"><img style="max-width: 300px;" src="images/5.jpg" alt="1"></div>
+                    <div class="div6"><img style="max-height: 250px;" src="images/6.jpg" alt="1"></div>
+                    <div class="div7"><img style="max-width: 250px;" src="images/7.jpg" alt="1"></div>
+                    <div class="div8"><img style="max-width: 250px;" src="images/8.jpg" alt="1"></div>
+                    <div class="div9"><img style="max-width: 250px;" src="images/9.jpg" alt="1"></div>
+                    <div class="div10"><img style="max-width: 250px;" src="images/10.jpg" alt="1"></div>
+                    <div class="div11"><img style="max-width: 250px;" src="images/11.jpg" alt="1"></div>
+                    <div class="div12"><img style="max-width: 250px;" src="images/12.jpg" alt="1"></div>
+                    <div class="div13"><img style="max-width: 250px;" src="images/13.jpg" alt="1"></div>
+                    <div class="div14"><img style="max-width: 250px;" src="images/14.jpg" alt="1"></div>
                 </div>
             </div>
         </div>

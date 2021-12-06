@@ -49,17 +49,17 @@
     height: 12px;
     width: 12px;
     margin: 0 2px;
-    background-color: #ddd;
+    background-color: #9e76c7;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 .active,
 .slider-dots_item:hover {
-    background-color: #aaa;
+    background-color: #9e76c7;
 }
 /* Анимация слайдов */
-.slider .item {
+/*.slider .item {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
@@ -80,4 +80,4 @@
     to {
         opacity: 1
     }
-}
+}*/

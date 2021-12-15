@@ -45,17 +45,28 @@
             height: 1600px;
             position: relative;
         }
+        .parent img {
+            transition: 0.5s;
+        }
+        .parent img:hover {
+            transform: scale(1.1);
+        }
         .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10, .div11, .div12, .div13, .div14{
             /*border: 2px solid firebrick;*/
             display: grid;
-            background-color: #E4DEEA;
+            /*background-color: #E4DEEA;*/
             margin: 5px;
             height: 300px;
         }
         @media only screen and (max-width: 700px) {
+            .full {
+                background-color: #E4DEEA;
+                height: 2200px;
+            }
             .div1, .div2, .div3, .div4, .div5, .div6, .div7, .leftbox {
                 margin: 5px;
             }
+            
             .div1 {grid-area: div1;}
             .div2 {grid-area: div2;}
             .div3 {grid-area: div3;}
@@ -84,6 +95,10 @@
             }
         }
         @media only screen and (max-width: 500px) {
+            .full {
+                background-color: #E4DEEA;
+                height: 4400px;
+            }
             .div1, .div2, .div3, .div4, .div5, .div6, .div7, .leftbox {
                 margin: 5px;
             }
@@ -115,8 +130,7 @@
             }
         }
     </style>
-
-
+    <link rel="stylesheet" type="text/css" href="dist/css/lightbox.css">
 
 
 
@@ -130,22 +144,23 @@
             <div class="container">
                 <a href="what.html">&#10094; Вернуться на главную</a>
                 <div class="parent">
-                    <div class="div1"><img style="max-width: 250px;" src="images/1.jpg" alt="1"></div>
-                    <div class="div2"><img style="max-width: 250px;" src="images/2.jpg" alt="1"></div>
-                    <div class="div3"><img style="max-width: 250px;" src="images/3.jpg" alt="1"></div>
-                    <div class="div4"><img style="max-width: 250px;" src="images/4.jpg" alt="1"></div>
-                    <div class="div5"><img style="max-width: 300px;" src="images/5.jpg" alt="1"></div>
-                    <div class="div6"><img style="max-height: 250px;" src="images/6.jpg" alt="1"></div>
-                    <div class="div7"><img style="max-width: 250px;" src="images/7.jpg" alt="1"></div>
-                    <div class="div8"><img style="max-width: 250px;" src="images/8.jpg" alt="1"></div>
-                    <div class="div9"><img style="max-width: 250px;" src="images/9.jpg" alt="1"></div>
-                    <div class="div10"><img style="max-width: 250px;" src="images/10.jpg" alt="1"></div>
-                    <div class="div11"><img style="max-width: 250px;" src="images/11.jpg" alt="1"></div>
-                    <div class="div12"><img style="max-width: 250px;" src="images/12.jpg" alt="1"></div>
-                    <div class="div13"><img style="max-width: 250px;" src="images/13.jpg" alt="1"></div>
-                    <div class="div14"><img style="max-width: 250px;" src="images/14.jpg" alt="1"></div>
+                    <div class="div1"><a href="images/1.jpg" data-lightbox="test"><img style="max-width: 250px;" src="images/1.jpg" alt="1"></a></div>
+                    <div class="div2"><a href="images/2.jpg" data-lightbox="test"><img style="max-width: 250px;" src="images/2.jpg" alt="1"></a></div>
+                    <div class="div3"><a href="images/3.jpg" data-lightbox="test"><img style="max-width: 250px;" src="images/3.jpg" alt="1"></a></div>
+                    <div class="div4"><a href="images/4.jpg" data-lightbox="test"><img style="max-width: 250px;" src="images/4.jpg" alt="1"></a></div>
+                    <div class="div5"><a href="images/5.jpg" data-lightbox="test"><img style="max-width: 300px;" src="images/5.jpg" alt="1"></a></div>
+                    <div class="div6"><a href="images/6.jpg" data-lightbox="test"><img style="max-height: 250px;" src="images/6.jpg" alt="1"></a></div>
+                    <div class="div7"><a href="images/7.jpg" data-lightbox="test"><img style="max-width: 250px;" src="images/7.jpg" alt="1"></a></div>
+                    <div class="div8"><a href="images/8.jpg" data-lightbox="test"><img style="max-width: 250px;" src="images/8.jpg" alt="1"></a></div>
+                    <div class="div9"><a href="images/9.jpg" data-lightbox="test"><img style="max-width: 250px;" src="images/9.jpg" alt="1"></a></div>
+                    <div class="div10"><a href="images/10.jpg" data-lightbox="test"></a><img style="max-width: 250px;" src="images/10.jpg" alt="1"></a></div>
+                    <div class="div11"><a href="images/11.jpg" data-lightbox="test"></a><img style="max-width: 250px;" src="images/11.jpg" alt="1"></a></div>
+                    <div class="div12"><a href="images/12.jpg" data-lightbox="test"></a><img style="max-width: 250px;" src="images/12.jpg" alt="1"></a></div>
+                    <div class="div13"><a href="images/13.jpg" data-lightbox="test"></a><img style="max-width: 250px;" src="images/13.jpg" alt="1"></a></div>
+                    <div class="div14"><a href="images/14.jpg" data-lightbox="test"></a><img style="max-width: 250px;" src="images/14.jpg" alt="1"></a></div>
                 </div>
             </div>
         </div>
+        <script src="dist/js/lightbox-plus-jquery.js"></script>
 </body>
 </html>

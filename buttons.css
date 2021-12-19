@@ -35,30 +35,11 @@
     font-weight: normal;
     font-style: normal;
 }
-.div1:hover {
-    border: 4px solid #ded3e9;
+.parent div {
+    transition: 0.5s;
+    border: 0;
 }
-
-.div2:hover {
-    border: 4px solid #ded3e9;
-}
-
-.div3:hover {
-    border: 4px solid #ded3e9;
-}
-
-.div4:hover {
-    border: 4px solid #ded3e9;
-}
-
-.div5:hover {
-    border: 4px solid #ded3e9;
-}
-
-.div6:hover {
-    border: 4px solid #ded3e9;
-}
-
-.div7:hover {
-    border: 4px solid #ded3e9;
+.parent div:hover {
+    transform: scale(1.05);
+    border: 0;
 }

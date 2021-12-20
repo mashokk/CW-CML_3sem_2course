@@ -1,0 +1,12 @@
+STATUS
+{
+    font-size: 300% !important;
+}
+STATUS, FIO, SPECIALITY, YEAR
+{
+    
+    font-size: 200%;
+    color: rgb(150, 95, 175);
+    text-align: center;
+    display: block;
+}

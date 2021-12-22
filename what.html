@@ -86,11 +86,7 @@
         .minutes { grid-area: 3 / 1 / 4 / 8; }
         .freespace { grid-area: 4 / 1 / 5 / 8; }
         .notifications { grid-area: 5 / 1 / 6 / 8; }
-
-
-
-
-
+        
         @media only screen and (max-width: 500px) {
             .full {
                 grid-template-columns: 1fr;
@@ -139,6 +135,12 @@
                     "dotts"
                     "minutes";
             }
+            .art {
+                text-align: center;
+                display: block;
+                position: relative;
+                left: 25%;
+            }
         }
 
         @media (min-width: 501px) {
@@ -159,11 +161,13 @@
         	font-weight: normal;
         	font-style: normal;
         }
-        
+        .art {
+            height: 410px; 
+            margin-left: -100px;
+        }
     </style>
     <link href="buttons.css" rel="stylesheet">
     <link rel="stylesheet" href="Notification.css">
-    
 </head>
 
 
@@ -185,7 +189,7 @@
             <div class="div1"><button onClick='location.href="1st_page_About_Me.html"' class="button1"><object data="image/obo_mne.svg" type="image/svg+xml"><img style="height: 150px;" src="images/obo_mne.svg" alt="Who am I?"></object></button></div>
             <div class="div2"><button onClick='location.href="##"' class="button2"><object data="image/navigatsia.svg" type="image/svg+xml"><img style="height: 240px;" src="images/navigatsia.svg" alt="Art navigation"></object></button></div>
             <div class="div3"><button onClick='location.href="##"' id="switch" class="button1"><object data="image/kontakty.svg" type="image/svg+xml"><img src="images/kontakty.svg" alt="Contacts"></object></button></div>
-            <div class="div4"><button onClick='location.href="2nd_page_Gallery.html"' class="button2"><object data="image/risunochki.svg" type="image/svg+xml"><img style="height: 410px;" src="images/risunochki.svg" alt="Art projects"></object></button></div>
+            <div class="div4"><button onClick='location.href="2nd_page_Gallery.html"' class="button2"><object data="image/risunochki.svg" type="image/svg+xml"><img class="art" src="images/risunochki.svg" alt="Art projects"></object></button></div>
             <div class="div5"><button onClick='location.href="3rd_page_My_Projects.html"' class="button2"><object data="image/dizayny.svg" type="image/svg+xml"><img style="height: 160px;" src="images/dizayny.svg" alt="Design projects"></object></button></div>
             <div class="div6"><button onClick='location.href="author.xml"' class="button2"><object data="image/logo.svg" type="image/svg+xml"><img style="height: 97%;" src="images/logo.svg" alt="Logo"></object></button></div>
             <div class="div7"><button onClick='location.href="##"' class="button1">

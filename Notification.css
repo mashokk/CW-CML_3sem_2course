@@ -29,3 +29,31 @@
     padding: 0;
     margin: 0;
 }
+
+
+[data-tooltip2] {
+    position: relative;
+}
+[data-tooltip2]::after {
+    font-size: 85%;
+    content: attr(data-tooltip2);
+    position: absolute;
+    width: 320px;
+    left: 0.5em; top: 0;
+    background: #E4DEEA;
+    color: #fff;
+    padding: 0.5em; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    opacity: 0;
+    transition: 1s;
+    z-index: 1;
+    border-radius: 30px;
+}
+[data-tooltip2]:hover::after {
+    opacity: 1;
+    top: 0em;
+    left: 0em;
+    z-index: 1;
+    border-radius: 30px;
+   }

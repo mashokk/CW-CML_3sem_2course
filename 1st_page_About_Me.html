@@ -22,7 +22,8 @@
             border-radius: 30px;
         }
         .container {
-            margin: auto;
+            margin: 0 auto;
+            padding: 40px;
             position: absolute;
             max-height: 90%;
             max-width: 900px;
@@ -49,6 +50,37 @@
             color: #6e4497 ;
             text-decoration-style: solid;
             text-decoration-color: #6e4497;
+        }
+        .write_me {
+            font-family: TTNorms-Medium;
+            display: block;
+            margin: auto;
+            border-radius: 30px;
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+            height: 60px;
+            width: 200px;
+            text-align: center;
+            background-color: #E4DEEA;
+            border: #9e76c7 solid 2px;
+            color: #9e76c7;
+            margin-top: 20px;
+        }
+        @media only screen and (max-width: 1246px) {
+            .full {
+                height: 115vh;
+            }
+        }
+        @media only screen and (max-width: 700px) {
+            .full {
+                height: 125vh;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            .full {
+                height: 130vh;
+            }
         }
     </style>
 </head>
@@ -86,6 +118,8 @@
                 <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
                 <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
             </div>
+
+            <button onClick='location.href="mailto:marusia2200@gmail.com"' class="write_me">Напишите мне :)</button>
         </div>
     </div>
 </body>

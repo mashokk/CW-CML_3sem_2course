@@ -79,6 +79,7 @@
             border: 2px solid rgb(0, 255, 255);*/
             font-size: 350%;
             text-align: center;
+            color: white;
             font-family: CoreMellow;
         }
         .hours { grid-area: 1 / 1 / 2 / 8; }
@@ -152,8 +153,6 @@
                 top: 10%;
             }
         }
-
-
         @font-face {
         	font-family: 'CoreMellow';
         	src: url('../fonts/CoreMellow15Thin_43.eot');
@@ -164,6 +163,25 @@
         .art {
             height: 410px; 
             margin-left: -100px;
+        }
+        table {
+            border: 1px;
+            width: 450px;
+        }
+        td img {
+            width: 75px;
+        }
+        td {
+            position: relative;
+            width: 60px;
+        }
+        td a {
+            position: absolute;
+            left: 0; right: 0;
+            top: 0; bottom: 0;
+            height: 50px;
+            margin-top: auto;
+            margin-bottom: auto;
         }
     </style>
     <link href="buttons.css" rel="stylesheet">
@@ -192,13 +210,17 @@
             <div class="div4"><button onClick='location.href="2nd_page_Gallery.html"' class="button2"><object data="image/risunochki.svg" type="image/svg+xml"><img class="art" src="images/risunochki.svg" alt="Art projects"></object></button></div>
             <div class="div5"><button onClick='location.href="3rd_page_My_Projects.html"' class="button2"><object data="image/dizayny.svg" type="image/svg+xml"><img style="height: 160px;" src="images/dizayny.svg" alt="Design projects"></object></button></div>
             <div class="div6"><button onClick='location.href="author.xml"' class="button2"><object data="image/logo.svg" type="image/svg+xml"><img style="height: 97%;" src="images/logo.svg" alt="Logo"></object></button></div>
-            <div class="div7"><button onClick='location.href="##"' class="button1">
-                <object data="image/sotsseti.svg" type="image/svg+xml">
-                    <img style="height: 97%;" src="images/sotsseti.svg" alt="Sotseti">
-                    <div>
-                        
-                    </div>
-                </object></button></div>
+            <div class="div7" class="button3">
+                <table>
+                    <tr>
+                        <td><a href="https://www.youtube.com/channel/UCd-Ykb60Cwo-9MuC16nnDLA"></a><img src="images/icon-02.png" alt="YouTube"></a></td>
+                        <td><a href="https://www.linkedin.com/in/%D0%BC%D0%B0%D1%80%D0%B8%D1%8F-%D0%B3%D0%BB%D1%83%D1%88%D0%BA%D0%BE%D0%B2%D0%B0-2b3088223"></a><img src="images/icon-03.png" alt="Linkedin"></a></td>
+                        <td><a href="https://vk.com/ok_mash"><img src="images/icon-01.png" alt="VKontacte"></a></td>
+                        <td><a href="https://www.instagram.com/ok_mash_/?hl=ru"></a><img src="images/icon-04.png" alt="Instagram"></a></td>
+                        <td><a href="https://github.com/mashokk"></a><img src="images/icon-05.png" alt="Git"></a></td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 

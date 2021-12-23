@@ -1,0 +1,68 @@
+.full {
+    background-color: #E4DEEA;
+    height: 100vh;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 30px;
+}
+.container {
+    margin: 0 auto;
+    padding: 40px;
+    position: absolute;
+    max-height: 90%;
+    max-width: 900px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-family: TTNorms-Medium;
+}
+@font-face {
+    font-family: 'TTNorms-Medium';
+    src: url('../fonts/TTNorms-Medium.eot');
+    src: local('☺'), url('fonts/TTNorms-Medium.woff') format('woff'), url('fonts/TTNorms-Medium.ttf') format('truetype'), url('fonts/TTNorms-Medium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+h1 {
+    font-size: 200%;
+}
+a:visited {
+    color: #9e76c7;
+}
+a:hover {
+    color: #6e4497 ;
+    text-decoration-style: solid;
+    text-decoration-color: #6e4497;
+}
+.write_me {
+    font-family: TTNorms-Medium;
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    height: 60px;
+    width: 200px;
+    text-align: center;
+    background-color: #E4DEEA;
+    border: #9e76c7 solid 2px;
+    color: #9e76c7;
+    margin-top: 20px;
+}
+@media only screen and (max-width: 1246px) {
+    .full {
+        height: 115vh;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .full {
+        height: 125vh;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .full {
+        height: 130vh;
+    }
+}

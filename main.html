@@ -6,188 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
     <title>Mash Ok | Главная страница</title>
-    <style>
-        body {
-            margin: 0;
-        }
-        .div1, .div2, .div3, .div4, .div5, .div6, .div7, .leftbox {
-            display: grid;
-            background-color: #E4DEEA;
-            margin: 10px;
-            border-radius: 30px;
-        }
-
-        .parent {
-            /*border: 2px solid black;*/
-            max-width: 956px;
-            display: grid;
-            grid-template-columns: repeat(10, 1fr);
-            grid-template-rows: repeat(7, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
-            height: 600px;
-            position: relative;
-        }
-
-        .div1 {grid-area: 1 / 1 / 3 / 7;}
-        .div2 {grid-area: 1 / 7 / 4 / 11;}
-        .div3 {grid-area: 4 / 7 / 6 / 11;}
-        .div4 {grid-area: 3 / 1 / 8 / 4;}
-        .div5 {grid-area: 3 / 4 / 6 / 7;}
-        .div6 {grid-area: 6 / 9 / 8 / 11;}
-        .div7 {grid-area: 6 / 4 / 8 / 9;}
-
-        .full {
-            /*border: 2px solid black;*/
-            height: 100vh;
-            max-width: 1197px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: 1fr 4fr;
-            grid-template-rows: 1fr;
-            grid-template-areas:
-                "leftbox parent ";
-        }
-
-        .leftbox {
-            /*border: 2px solid black;*/
-            min-height: 100px;
-            max-height: 750px;
-            position: relative;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-            grid-template-areas:
-                "left";
-        }
-        .heightt {
-            font-size: 15%;
-        }
-        .left {
-            margin: auto;
-            width: 80px;
-            height: 700px;
-            position: relative;
-            /*border: 2px solid black;*/
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            grid-template-rows: 1fr 0.1fr 1fr 6fr 1fr;
-        }
-        .hours, .dotts, .minutes, .freespace, .notifications {
-            display: grid;
-            /*background-color: #E4DEEA;
-            border: 2px solid rgb(0, 255, 255);*/
-            font-size: 350%;
-            text-align: center;
-            color: white;
-            font-family: CoreMellow;
-        }
-        .hours { grid-area: 1 / 1 / 2 / 8; }
-        .dotts { grid-area: 2 / 1 / 3 / 8; }
-        .minutes { grid-area: 3 / 1 / 4 / 8; }
-        .freespace { grid-area: 4 / 1 / 5 / 8; }
-        .notifications { grid-area: 5 / 1 / 6 / 8; }
-        
-        @media only screen and (max-width: 500px) {
-            .full {
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr 6fr;
-                grid-template-areas:
-                    "leftbox"
-                    "parent";
-            }
-            .div1, .div2, .div3, .div4, .div5, .div6, .div7 {
-                margin: 5px;
-            }
-            .div1 {grid-area: div1;}
-            .div2 {grid-area: div2;}
-            .div3 {grid-area: div3;}
-            .div4 {grid-area: div4;}
-            .div5 {grid-area: div5;}
-            .div6 {grid-area: div6;}
-            .div7 {grid-area: div7;}
-            .parent {
-                height: 1700px;
-                grid-template-columns: 1fr;
-                grid-template-rows: 0.8fr 1fr 0.5fr 1.2fr 0.9fr 0.8fr 0.8fr;
-                grid-template-areas:
-                    "div1"
-                    "div2"
-                    "div4"
-                    "div5"
-                    "div7"
-                    "div3"
-                    "div6";
-            }
-            .hours { grid-area: 1 / 3 / 2 / 4; }
-            .dotts { grid-area: 1 / 4 / 2 / 5; }
-            .minutes { grid-area: 1 / 5 / 2 / 6; }
-            .freespace { grid-area: 1 / 2 / 2 / 3; }
-            .notifications { grid-area: 1 / 1 / 2 / 2; }
-            .left {
-                width: 400px;
-                height: 100px;
-                grid-template-columns: 1fr 3fr 1fr 0.1fr 1fr;
-                grid-template-rows: 1fr;
-                grid-template-areas:
-                    "notifications"
-                    "freespace"
-                    "hours"
-                    "dotts"
-                    "minutes";
-            }
-            .art {
-                text-align: center;
-                display: block;
-                position: relative;
-                left: 25%;
-            }
-        }
-
-        @media (min-width: 501px) {
-            .leftbox {
-                max-width: 100px;
-                height: 730px;
-            }
-            .parent {
-                top: 10%;
-            }
-        }
-        @font-face {
-        	font-family: 'CoreMellow';
-        	src: url('../fonts/CoreMellow15Thin_43.eot');
-        	src: local('☺'), url('fonts/CoreMellow15Thin_43.woff') format('woff'), url('fonts/CoreMellow15Thin_43.ttf') format('truetype'), url('fonts/CoreMellow15Thin_43.svg') format('svg');
-        	font-weight: normal;
-        	font-style: normal;
-        }
-        .art {
-            height: 410px; 
-            margin-left: -100px;
-        }
-        table {
-            border: 1px;
-            width: 450px;
-        }
-        td img {
-            width: 75px;
-        }
-        td {
-            position: relative;
-            width: 60px;
-        }
-        td a {
-            position: absolute;
-            left: 0; right: 0;
-            top: 0; bottom: 0;
-            height: 50px;
-            margin-top: auto;
-            margin-bottom: auto;
-        }
-    </style>
+    
+    <link rel="stylesheet" href="main.css">
     <link href="buttons.css" rel="stylesheet">
     <link rel="stylesheet" href="Notification.css">
-</head>
 
+</head>
 
 <body bgcolor="white">
     <div class="full">
@@ -223,8 +47,7 @@
             </div>
         </div>
     </div>
-
-
+    
 </body>
 
 </html>
